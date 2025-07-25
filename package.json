@@ -1,0 +1,51 @@
+{
+  "name": "resgest",
+  "description": "",
+  "version": "1.0.0",
+  "author": "peal-26",
+  "devDependencies": {
+    "eslint": "^9.28.0",
+    "husky": "^9.1.7",
+    "lint-staged": "^16.1.0",
+    "prettier": "^3.5.3",
+    "syncpack": "^13.0.4",
+    "turbo": "^2.5.4"
+  },
+  "engines": {
+    "node": ">=22"
+  },
+  "keywords": [],
+  "lint-staged": {
+    "*.{js,jsx,ts,tsx}": [
+      "eslint --fix",
+      "prettier --write"
+    ],
+    "*.{json,md,yml,yaml}": [
+      "prettier --write"
+    ]
+  },
+  "packageManager": "npm@10.0.0",
+  "private": true,
+  "scripts": {
+    "build": "turbo run build",
+    "build:graph": "turbo run build --graph=turbo-graph.jpg",
+    "dev": "turbo run dev",
+    "dev:admin": "turbo run dev --filter=admin",
+    "dev:api": "turbo run dev --filter=api",
+    "dev:webapp": "turbo run dev --filter=web",
+    "dev:website": "turbo run dev --filter=website",
+    "format": "turbo run format && npm run syncpack:format",
+    "lint": "turbo run lint",
+    "prepare": "husky",
+    "syncpack:fix": "npx syncpack fix",
+    "syncpack:fix:mismatches": "npx syncpack fix-mismatches",
+    "syncpack:format": "npx syncpack format",
+    "syncpack:list": "npx syncpack -- list",
+    "syncpack:list:mismatches": "npx syncpack list-mismatches",
+    "syncpack:update": "npx syncpack update"
+  },
+  "workspaces": [
+    "apps/*",
+    "packages/*"
+  ]
+}

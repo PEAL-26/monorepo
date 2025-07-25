@@ -1,0 +1,31 @@
+{
+  "name": "@repo/hooks",
+  "description": "",
+  "version": "1.0.0",
+  "author": "peal-26",
+  "devDependencies": {
+    "@repo/eslint-config": "*",
+    "@repo/jest-config": "*",
+    "@repo/prettier-config": "*",
+    "@repo/typescript-config": "*",
+    "eslint": "^9.29.0",
+    "eslint-plugin-react-hooks": "^5.2.0",
+    "prettier": "^3.5.3",
+    "react-hooks": "^1.0.1",
+    "typescript": "^5.8.3"
+  },
+  "exports": {
+    "./*": {
+      "types": "./src/*.ts",
+      "default": "./src/*.ts"
+    }
+  },
+  "keywords": [],
+  "license": "ISC",
+  "scripts": {
+    "check-types": "tsc --noEmit",
+    "format": "npx prettier --write ./src",
+    "lint": "eslint . --max-warnings 0"
+  },
+  "type": "module"
+}

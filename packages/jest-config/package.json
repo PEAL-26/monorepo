@@ -1,0 +1,22 @@
+{
+  "name": "@repo/jest-config",
+  "description": "",
+  "version": "1.0.0",
+  "author": "peal-26",
+  "dependencies": {
+    "@types/jest": "^29.0.0",
+    "jest": "^29.0.0",
+    "ts-jest": "^29.0.0"
+  },
+  "devDependencies": {
+    "eslint": "^9.29.0",
+    "prettier": "^3.5.3",
+    "typescript": "^5.8.3"
+  },
+  "keywords": [],
+  "license": "ISC",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  }
+}

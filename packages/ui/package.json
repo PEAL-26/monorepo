@@ -1,0 +1,59 @@
+{
+  "name": "@repo/ui",
+  "description": "",
+  "version": "1.0.0",
+  "author": "peal-26",
+  "dependencies": {
+    "@radix-ui/react-slot": "^1.2.3",
+    "@tailwindcss/postcss": "^4.1.10",
+    "class-variance-authority": "^0.7.1",
+    "clsx": "^2.1.1",
+    "lucide-react": "^0.515.0",
+    "react": "^19.0.0",
+    "tailwind-merge": "^3.3.1",
+    "tailwindcss-animate": "^1.0.7",
+    "tw-animate-css": "^1.3.4"
+  },
+  "devDependencies": {
+    "@repo/eslint-config": "*",
+    "@repo/jest-config": "*",
+    "@repo/prettier-config": "*",
+    "@repo/typescript-config": "*",
+    "@types/node": "^24.0.2",
+    "@types/react": "^19.0.0",
+    "autoprefixer": "^10.4.21",
+    "cross-env": "^7.0.3",
+    "eslint": "^9.29.0",
+    "postcss": "^8.5.6",
+    "prettier": "^3.5.3",
+    "tailwindcss": "^3.4.17",
+    "typescript": "^5.8.3"
+  },
+  "exports": {
+    "./*": "./src/components/*.tsx",
+    "./lib/*": "./src/lib/*.ts",
+    "./hooks/*": "./src/hooks/*.ts",
+    "./colors": "./src/styles/colors.ts",
+    "./globals.css": "./src/styles/globals.css",
+    "./postcss.config": "./postcss.config.mjs",
+    "./tailwind.config": "./tailwind.config.ts"
+  },
+  "files": [
+    "dist"
+  ],
+  "keywords": [],
+  "license": "ISC",
+  "peerDependencies": {
+    "react": "^19.0.0"
+  },
+  "private": true,
+  "scripts": {
+    "check-types": "tsc --noEmit",
+    "format": "npx prettier --write ./src",
+    "lint": "eslint ./src --max-warnings 0"
+  },
+  "sideEffects": [
+    "**/*.css"
+  ],
+  "type": "module"
+}

@@ -1,0 +1,27 @@
+{
+  "name": "@repo/eslint-config",
+  "description": "",
+  "version": "1.0.0",
+  "author": "peal-26",
+  "devDependencies": {
+    "@eslint/eslintrc": "^3.3.1",
+    "@eslint/js": "^9.29.0",
+    "eslint": "^9.29.0",
+    "eslint-plugin-prettier": "^5.4.1",
+    "eslint-plugin-react-hooks": "^5.2.0",
+    "globals": "^16.2.0",
+    "prettier": "^3.5.3",
+    "typescript": "^5.8.3",
+    "typescript-eslint": "^8.34.0"
+  },
+  "exports": {
+    "./*": {
+      "types": "./*.js",
+      "default": "./*.js"
+    }
+  },
+  "keywords": [],
+  "license": "ISC",
+  "main": "base.js",
+  "type": "module"
+}
