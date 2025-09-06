@@ -1,4 +1,4 @@
-import base from './base.js';
+import base from './eslint.config.js';
 import eslint from '@eslint/js';
 import eslintPluginPrettierRecommended from 'eslint-plugin-prettier/recommended';
 import globals from 'globals';
@@ -11,7 +11,6 @@ const configs = tseslint.config(
   },
   eslint.configs.recommended,
   ...tseslint.configs.recommendedTypeChecked,
-  // @ts-ignore
   eslintPluginPrettierRecommended,
   {
     languageOptions: {

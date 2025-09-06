@@ -1,5 +1,13 @@
 {
-  "extends": "@repo/typescript-config/tsconfig.base.json",
+  "extends": "@repo/config-typescript/tsconfig.base.json",
+  "compilerOptions": {
+    "strict": true,
+    "composite": true,
+    "noEmit": true,
+    "baseUrl": ".",
+    "rootDir": "src",
+    "moduleResolution": "bundler",
+  },
   "include": [
     "src"
   ],

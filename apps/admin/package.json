@@ -11,11 +11,11 @@
     "react-dom": "^19.0.0"
   },
   "devDependencies": {
-    "@repo/eslint-config": "*",
-    "@repo/jest-config": "*",
-    "@repo/nextjs-config": "*",
-    "@repo/prettier-config": "*",
-    "@repo/typescript-config": "*",
+    "@repo/config-eslint": "*",
+    "@repo/config-jest": "*",
+    "@repo/config-nextjs": "*",
+    "@repo/config-prettier": "*",
+    "@repo/config-typescript": "*",
     "@types/node": "^22.10.7",
     "@types/react": "^19",
     "@types/react-dom": "^19",

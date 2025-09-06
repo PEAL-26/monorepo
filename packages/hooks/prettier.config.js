@@ -1,4 +1,4 @@
-import baseConfig from "@repo/prettier-config";
+import baseConfig from "@repo/config-prettier";
 
 export default {
   ...baseConfig,

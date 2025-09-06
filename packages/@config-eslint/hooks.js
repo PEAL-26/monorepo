@@ -1,4 +1,4 @@
-import base from './base.js';
+import base from './eslint.config.js';
 import tseslint from 'typescript-eslint';
 import reactHooks from 'eslint-plugin-react-hooks';
 

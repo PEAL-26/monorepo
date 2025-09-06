@@ -1,2 +1,2 @@
-import config from '@repo/eslint-config/hooks';
+import config from '@repo/config-eslint/hooks';
 export default config;

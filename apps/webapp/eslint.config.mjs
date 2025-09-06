@@ -1,2 +1,2 @@
-import base from '@repo/eslint-config/nextjs';
+import base from '@repo/config-eslint/nextjs';
 export default base;

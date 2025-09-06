@@ -1,2 +1,2 @@
-import base from '@repo/eslint-config/nestjs';
-export default base;
+import configs from '@repo/config-eslint/nestjs';
+export default configs;

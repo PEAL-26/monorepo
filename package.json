@@ -1,5 +1,5 @@
 {
-  "name": "resgest",
+  "name": "monorepo",
   "description": "",
   "version": "1.0.0",
   "author": "peal-26",
@@ -29,6 +29,10 @@
   "scripts": {
     "build": "turbo run build",
     "build:graph": "turbo run build --graph=turbo-graph.jpg",
+    "build:admin": "turbo run build --filter=admin",
+    "build:api": "turbo run build --filter=api",
+    "build:webapp": "turbo run build --filter=web",
+    "build:website": "turbo run build --filter=website",
     "dev": "turbo run dev",
     "dev:admin": "turbo run dev --filter=admin",
     "dev:api": "turbo run dev --filter=api",

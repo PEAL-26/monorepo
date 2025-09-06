@@ -1,2 +1,2 @@
-import base from '@repo/eslint-config/react';
+import base from '@repo/config-eslint/react';
 export default base;
